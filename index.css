@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header{
+    background:url("famcover.png");
+    height: 800px;
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+}
+nav {
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-right: 0%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: stretch;
+}
+nav>ul>li{
+    text-align: right;
+}
+ul>li{
+    display: inline-block;
+    color:white;
+}
+nav>ul>li>a{
+    padding: 40px;
+    margin-right: 0x;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}   
+nav>ul>li>a:hover{
+    background:yellow
+}
+.signup{
+    background-color: #23A6F0;
+    color: white;
+}
+.bunner{
+    color: white;
+}
+.bunnerA{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: -60%, -50%;
+    width: 300px;
+    justify-content: space-around;    
+}
+.bunnerB{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: -60%, -50%;
+    width: 300px;
+    justify-content: space-around;
+    display: flex;
+}
+.bunnerB>h4{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    background: #23A6F0;
+}
+.bunnerB>p{
+border: 1px solid white;
+padding: 10px;
+border-radius: 15px;
+}
+.bunnerB>a:hover{
+    background: yellow;
+}
+.article{
+    background: white;
+    display: flex;
+    /*justify-content: center;*/
+    align-items:center;
+    justify-content: space-around;
+
+
+}
+.article1{
+    margin-top: -90px;
+    width: 170px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.article2{
+    margin-top: -90px;
+    max-width: 170px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.article3{
+    background: #23A6F0;
+    color: white;
+    margin-top: -90px;
+    width: 170px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.content{
+    background: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 60px;
+    margin: 50px;
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 150px;
+    margin: 20px;
+
+}
+#title>p{
+    color: grey;
+}
+/*
+.rating{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.rating label{
+    display:block;
+    cursor:pointer;
+    width:50px;
+    padding-left: 10px;
+}
+.rating input{
+    display: none;
+}
+.rating label::before{
+    content:'\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #1d1c1c;
+}*/
+.reviews{
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.reviews>.review1{
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 20px;
+    width: 350px;
+} 
+.reviews>.review2{
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 20px;
+    width: 350px;
+} 
+.reviews>.review3{
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 20px;
+    width: 350px;
+} 
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos>.logo1, .logo2, .logo3, .logo4, .logo5{
+    padding: 10px;
+    padding-top: 200px;
+}
+.subscribe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(235, 231, 231, 0.897);
+    background: rgb(209, 50, 183);
+    padding:10px;
+    padding-bottom: 20px;
+}
+.subscribe>.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.subscribe>.sub>p{
+    background: white;
+    color: rgb(66, 64, 64);
+}    
+.subscribe>.sub>h4>a{
+    background: rgb(62, 167, 209);
+    color:white;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+.price>p{
+color: gray;
+padding: 8%;
+}
+.packages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.free{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 300px;
+}
+.standard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(2, 46, 63);
+    border-radius: 10px;
+    height: 350px;
+    color: white;
+    background: rgb(2, 46, 63);
+    
+}
+.premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 300px;
+}
+.packages>.free>h3{
+    color: skyblue;
+    font-size: 40px;
+}
+.packages>.standard>h3{
+    color: skyblue;
+    font-size: 30px;
+}.packages>.premium>h3{
+        color: skyblue;
+        font-size: 30px;
+}
+.packages>.free>.trial{
+    color: white;
+    background: skyblue;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.packages>.standard>.trial{
+    color: white;
+    background: skyblue;
+    border-radius: 4px;
+    margin-top: 55px;
+    padding: 10px;
+}
+.packages>.premium>.trial{
+    color: white;
+    background: skyblue;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.directions{
+    background:#252B42;
+    margin-top: 40px;
+    display: flex;
+    color: white;
+    padding:30px;
+    height: 750px;
+}
+.visit{
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+.visit>img{
+    margin-top: -17%;
+    height: 700px;
+}
+.container{
+    justify-content: space-around;
+    padding-left: 15px;
+    margin-top: -17%;
+    background: white;
+
+}
+.visit>.container>h3,h4{
+    color:#252B42;
+}
+.visit>.container>.details1>p{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    width: 300px;
+}
+.visit>.container>.details2>p{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    width: 300px;
+}
+.visit>.container>.details3>p{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    width: 300px;
+}
+.visit>.container>.details4>p{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    width: 300px;
+}
+.visit>.container>p{
+    background: skyblue;
+    margin-top: 25px;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.first>.consult0>p{
+    color: grey;
+}
+.first>.consult1>h5{
+    background: skyblue;
+    color: white;
+    margin-left: 500px;
+    padding: 10px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.last>.info>p{
+    color: grey;
+}
+.last>.legal>p{
+    color: grey;
+}
+.last>.features>p{
+    color: grey;
+}
+.last>.resources>p{
+    color: grey;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+@media only screen and(min-width:1000px){
+    body{
+    background: black;
+    color: white;
+}
+}
