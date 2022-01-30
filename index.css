@@ -346,6 +346,9 @@ padding: 8%;
     display: flex;
     flex-direction: row;
     padding: 15px;
+    height: 300px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 .last>.info>p{
     color: grey;
