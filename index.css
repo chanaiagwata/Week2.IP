@@ -7,6 +7,9 @@ body{
     background-color: white;
     padding-left: 10%;
     padding-right: 10%;
+    @media screen and (min-width: 480px){
+        background:blue;
+   }
 }
 header{
     background:url("famcover.png");
@@ -27,7 +30,7 @@ nav>ul>li{
 }
 ul>li{
     display: inline-block;
-    color:white;
+    color:#E8E8E8;
 }
 nav>ul>li>a{
     padding: 40px;
@@ -38,14 +41,14 @@ nav>ul>li>a{
     padding-bottom: 10px;
 }   
 nav>ul>li>a:hover{
-    background:yellow
+    background: black;
 }
 .signup{
-    background-color: #23A6F0;
-    color: white;
+    background-color: #24A6F0;
+    color: #E8E8E8;
 }
 .bunner{
-    color: white;
+    color: #E8E8E8;
 }
 .bunnerA{
     position: absolute;
@@ -65,10 +68,11 @@ nav>ul>li>a:hover{
     display: flex;
 }
 .bunnerB>h4{
-    border: 1px solid white;
+    color: #E8E8E8;
+    border: 1px solid ;
     padding: 10px;
     border-radius: 15px;
-    background: #23A6F0;
+    background: #24A6F0;
 }
 .bunnerB>p{
 border: 1px solid white;
@@ -76,7 +80,7 @@ padding: 10px;
 border-radius: 15px;
 }
 .bunnerB>a:hover{
-    background: yellow;
+    background: black;
 }
 .article{
     background: white;
@@ -165,9 +169,10 @@ border-radius: 15px;
     justify-content: space-around;
     align-items: center;
     color: rgba(235, 231, 231, 0.897);
-    background: rgb(209, 50, 183);
+    background: #5E3A89;
     padding:10px;
     padding-bottom: 20px;
+
 }
 .subscribe>.sub{
     display: flex;
@@ -177,9 +182,10 @@ border-radius: 15px;
 .subscribe>.sub>p{
     background: white;
     color: rgb(66, 64, 64);
+    width: 150px;
 }    
-.subscribe>.sub>h4>a{
-    background: rgb(62, 167, 209);
+.subscribe>.sub>h4{
+    background: #24A6F0;
     color:white;
 }
 .price{
@@ -209,7 +215,9 @@ padding: 8%;
     border: 2px solid skyblue;
     border-radius: 10px;
     margin-top: 30px;
-    height: 300px;
+    height: 400px;
+    width: 300px;
+
 }
 .standard{
     display: flex;
@@ -218,9 +226,10 @@ padding: 8%;
     align-items: center;
     border: 2px solid rgb(2, 46, 63);
     border-radius: 10px;
-    height: 350px;
+    height: 450px;
     color: white;
     background: rgb(2, 46, 63);
+    width: 300px;
     
 }
 .premium{
@@ -228,39 +237,46 @@ padding: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid skyblue;
+    border: 2px solid #2AA9F0;
     border-radius: 10px;
     margin-top: 40px;
-    height: 300px;
+    height: 400px;
+    width: 300px;
 }
 .packages>.free>h3{
-    color: skyblue;
+    color: #2AA9F0;
     font-size: 40px;
 }
+.packages>.free>.list1>li{
+    color: black;
+}
 .packages>.standard>h3{
-    color: skyblue;
+    color: #2AA9F0;
     font-size: 30px;
 }.packages>.premium>h3{
-        color: skyblue;
+        color: #2AA9F0;
         font-size: 30px;
 }
 .packages>.free>.trial{
     color: white;
-    background: skyblue;
+    background: #2AA9F0;
     border-radius: 4px;
     margin-top: 30px;
     padding: 10px;
 }
 .packages>.standard>.trial{
     color: white;
-    background: skyblue;
+    background: #2AA9F0;
     border-radius: 4px;
     margin-top: 55px;
     padding: 10px;
 }
+.packages>.premium>.list2>li{
+    color:black
+}
 .packages>.premium>.trial{
     color: white;
-    background: skyblue;
+    background: #2AA9F0;
     border-radius: 4px;
     margin-top: 30px;
     padding: 10px;
@@ -317,7 +333,7 @@ padding: 8%;
     width: 300px;
 }
 .visit>.container>p{
-    background: skyblue;
+    background: #2AA9F0;
     margin-top: 25px;
     color: white;
     border-radius: 3px;
@@ -334,7 +350,7 @@ padding: 8%;
     color: grey;
 }
 .first>.consult1>h5{
-    background: skyblue;
+    background: #2AA9F0;
     color: white;
     margin-left: 500px;
     padding: 10px;
@@ -370,10 +386,4 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
-}
-@media only screen and(min-width:1000px){
-    body{
-    background: black;
-    color: white;
-}
 }
