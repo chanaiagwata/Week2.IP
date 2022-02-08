@@ -371,13 +371,29 @@ padding: 8%;
 .last>.info>p{
     color: grey;
 }
+.last>.info> a{
+    text-decoration: none;
+    color: grey;
+}
 .last>.legal>p{
+    color: grey;
+}
+.last>.legal>a{
+    text-decoration: none;
     color: grey;
 }
 .last>.features>p{
     color: grey;
 }
+.last>.features>a{
+    text-decoration: none;
+    color: grey;
+}
 .last>.resources>p{
+    color: grey;
+}
+.last>.resources a{
+    text-decoration: none;
     color: grey;
 }
 
@@ -386,4 +402,11 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+.last>.contact>.call>p>a{
+text-decoration: none;
 }
